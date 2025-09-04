@@ -1,31 +1,10 @@
-// import Api from "./Component/APi"
-
-import Form from "./Auth/form"
-
-
-
-
-// import Blessing from "./Component/Blessing"
-
-
-
-
-
-
+import Counter from "./CounterPage"
 const App:React.FC = () =>{
-
-
   return(
     <div>
-      <Form/>
-      
-     {/* <Api/> */}
-
-     {/* <Blessing/> */}
+     <Counter/>
     </div>
   )
 }
-
-
 
 export default App
