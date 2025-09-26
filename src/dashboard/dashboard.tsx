@@ -1,7 +1,9 @@
- import React from "react";
 
- import Logo from "../assets/timelyimage.jpg"
- import Image from "../assets/IMG-20230710-WA0036.jpg"
+
+    
+                import React from "react";
+                import Logo from "../assets/timelyimage.jpg"
+                import Image from "../assets/IMG-20230710-WA0036.jpg"
 
                 const Dashboard: React.FC = () => {
                     const timeSlots: string[] = [
@@ -24,10 +26,10 @@
                     return (
                         <div className="flex min-h-screen bg-gray-50">
                             {/* Sidebar */}
-                            <aside className="w-64 bg-white border-r flex flex-col py-6 px-4" >
+                            <aside className="w-64 bg-white border-r flex flex-col py-6 px-4">
                                 <div className="flex items-center mb-8">
-                                    <img src={Logo} alt="Logo" className="w-[auto] h-20 object-fill" />
-                                    {/* <span className="font-bold text-green-700 text-lg">TIMELY HUB</span> */}
+                                    <img src={Logo} alt="Logo" className="w-[150px] h-[40px] mr-2 object-fill" />
+                                    
                                 </div>
                                 <nav className="flex-1">
                                     <ul className="space-y-4">
@@ -87,7 +89,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {days.map((day: string, ) => (
+                                                    {days.map((day: string) => (
                                                         <tr key={day} className="border-t">
                                                             <td className="px-4 py-2 font-medium text-green-700 bg-green-100">{day}</td>
                                                             {timeSlots.map((_: string, i: number) => (
@@ -105,10 +107,10 @@
                                     </section>
 
                                     {/* Right Sidebar */}
-                                    <div className="w-80">
+                                    <aside className="w-80">
                                         {/* User Info */}
                                         <div className="flex items-center gap-3 mb-4">
-                                            <img src={Image} alt="" className=" w-12 h-12 rounded-full flex items-center justify-center" />
+                                            <img src={Image} alt="" className="w-12 h-12 rounded-full flex items-center justify-center" />
                                             <div>
                                                 <div className="font-semibold text-gray-800">Jone Copper</div>
                                                 <div className="text-xs text-gray-500">UI Designer</div>
@@ -137,10 +139,10 @@
                                                         <td className="text-gray-700">10</td><td className="text-gray-700">11</td><td className="text-gray-700">12</td><td className="text-gray-700">13</td><td className="text-gray-700">14</td><td className="text-gray-700">15</td><td className="text-gray-700">16</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="text-gray-700">17</td><td className="text-gray-700">18</td><td className="text-gray-700">19</td><td className="text-gray-700">20</td><td className="text-gray-700">21</td><td className="text-gray-700">22</td><td className="bg-green-100 text-green-700 rounded-full">23</td>
+                                                        <td className="text-gray-700">17</td><td className="text-gray-700">18</td><td className="text-gray-700">19</td><td className="text-gray-700">20</td><td className="text-gray-700">21</td><td className="text-gray-700">22</td><td className="text-white rounded-full">23</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="text-gray-700">24</td><td className="text-gray-700">25</td><td className="text-gray-700">26</td><td className="bg-green-100 text-green-700 rounded-full">27</td><td className="text-gray-700">28</td><td></td><td></td>
+                                                        <td className="text-gray-700">24</td><td className="text-gray-700">25</td><td className="text-gray-700">26</td><td className="bg-green-100 text-white rounded-full">27</td><td className="text-gray-700">28</td><td></td><td></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -165,13 +167,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </aside>
                                 </div>
                             </main>
                         </div>
                     );
 };
 
- export default Dashboard;
-
-
+export default Dashboard;
