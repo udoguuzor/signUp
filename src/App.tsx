@@ -1,8 +1,10 @@
-import Counter from "./CounterPage"
+import Dashboard from "./dashboard/dashboard"
+
+
 const App:React.FC = () =>{
   return(
     <div>
-     <Counter/>
+     <Dashboard/>
     </div>
   )
 }
