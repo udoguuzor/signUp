@@ -1,7 +1,7 @@
 import { Outlet, NavLink } from "react-router-dom";
 import Logo from "../dashboard/../assets/timelyimage.jpg";
 
-const Dashboard: React.FC = () => {
+const PageLayout: React.FC = () => {
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
                 <span className="material-icons mr-2">My Schedule</span>
               </li>
             </NavLink>
-            <NavLink to="/chat">
+            <NavLink to="/chat" >
               <li className="flex items-center text-gray-600 hover:text-green-700 px-3 py-2 cursor-pointer">
                 <span className="material-icons mr-2">Ai Chat</span>
                 <span className="ml-auto bg-red-500 text-white rounded-full px-2 text-xs">4</span>
@@ -72,4 +72,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard
+export default PageLayout;

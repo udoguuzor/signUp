@@ -1,10 +1,10 @@
-import Dashboard from "./dashboard/dashboard"
+import AllScreen from "./AllScreen"
 
 
 const App:React.FC = () =>{
   return(
     <div>
-     <Dashboard/>
+    <AllScreen/>
     </div>
   )
 }
