@@ -9,7 +9,7 @@ import Logout from "./Pages/Logout";
 import Upload from "./Pages/Upload";
 import PageLayout from "./Layout/PageLayout";
 // import DashboardHome from "./dashboard/dashboard"; // Assuming you have a default page
-import Dashboard from "./dashboard/dashboard";
+// import Dashboard from "./dashboard/dashboard";
 
 const AllScreen: React.FC = () => {
     return (
@@ -19,7 +19,7 @@ const AllScreen: React.FC = () => {
             <Route path="/" element={<PageLayout />}>
                 
                 {/* ADDED: An index route for the default view at "/" */}
-                <Route index element={<Dashboard />} />
+                {/* <Route index element={<Dashboard />} /> */}
 
                 {/* CORRECTED: Paths are now relative (no leading "/") */}
                 <Route path="/chat" element={<Chat />} />
